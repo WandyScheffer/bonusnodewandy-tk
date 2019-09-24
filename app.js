@@ -22,7 +22,7 @@ app.get('/', function (req, res) {
   var date = new Date();
   var horas = date.getHours();
   var horasPC = horas - 3;
-  if (horas - 3 <= 0) {
+  if (horas - 3 < 0) {
     horasPC = horas + 21;
   }
   var minutos = date.getMinutes();
